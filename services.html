@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - What We Offer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .services-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .services-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .services-header img {
+            max-width: 500px;
+            width: 100%;
+            height: 300px;
+            margin: 1.5rem auto;
+            border-radius: 10px;
+        }
+        .services-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .service-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            align-items: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .service-card:nth-child(even) {
+            direction: rtl;
+        }
+        .service-card:nth-child(even) > * {
+            direction: ltr;
+        }
+        .service-image {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .service-content h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        .service-content p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .service-features {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        .service-features li {
+            padding: 0.5rem 0;
+            color: #333;
+        }
+        .service-features li:before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        .cta-section {
+            background-color: #f9f9f9;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .cta-section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        .cta-section button {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .cta-section button:hover {
+            background-color: #764ba2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        @media (max-width: 768px) {
+            .service-card {
+                grid-template-columns: 1fr;
+            }
+            .service-card:nth-child(even) {
+                direction: ltr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="services-header">
+        <h1>Our Services</h1>
+        <p>Comprehensive solutions tailored to meet your unique needs</p>
+        <img src="https://via.placeholder.com/500x300/667eea/ffffff?text=Our+Services" alt="Our Services">
+    </section>
+
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-content">
+                <h2>Web Development</h2>
+                <p>Create stunning, responsive websites that engage your audience and drive results. Our expert developers use the latest technologies to build fast, secure, and scalable web applications.</p>
+                <ul class="service-features">
+                    <li>Custom website design and development</li>
+                    <li>E-commerce solutions</li>
+                    <li>Content management systems</li>
+                    <li>Progressive web applications</li>
+                    <li>API integration and development</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/500x300/4CAF50/ffffff?text=Web+Development" alt="Web Development" class="service-image">
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <h2>Mobile App Development</h2>
+                <p>Transform your ideas into powerful mobile applications for iOS and Android. We create intuitive, feature-rich apps that provide exceptional user experiences.</p>
+                <ul class="service-features">
+                    <li>Native iOS and Android apps</li>
+                    <li>Cross-platform development</li>
+                    <li>UI/UX design</li>
+                    <li>App maintenance and support</li>
+                    <li>App store optimization</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/500x300/2196F3/ffffff?text=Mobile+Apps" alt="Mobile App Development" class="service-image">
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <h2>Digital Marketing</h2>
+                <p>Boost your online presence and reach your target audience effectively. Our comprehensive digital marketing strategies help you grow your brand and increase conversions.</p>
+                <ul class="service-features">
+                    <li>Search engine optimization (SEO)</li>
+                    <li>Social media marketing</li>
+                    <li>Content marketing</li>
+                    <li>Email marketing campaigns</li>
+                    <li>Pay-per-click advertising</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/500x300/FF9800/ffffff?text=Digital+Marketing" alt="Digital Marketing" class="service-image">
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <h2>Cloud Solutions</h2>
+                <p>Leverage the power of cloud computing to scale your business efficiently. We provide secure, reliable cloud infrastructure and migration services.</p>
+                <ul class="service-features">
+                    <li>Cloud migration and deployment</li>
+                    <li>Infrastructure as a Service (IaaS)</li>
+                    <li>Cloud security and compliance</li>
+                    <li>Backup and disaster recovery</li>
+                    <li>24/7 monitoring and support</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/500x300/9C27B0/ffffff?text=Cloud+Solutions" alt="Cloud Solutions" class="service-image">
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <h2>Consulting Services</h2>
+                <p>Get expert guidance to make informed technology decisions. Our consultants help you optimize processes, reduce costs, and achieve your business objectives.</p>
+                <ul class="service-features">
+                    <li>Technology strategy and planning</li>
+                    <li>Business process optimization</li>
+                    <li>Digital transformation</li>
+                    <li>Project management</li>
+                    <li>Training and workshops</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/500x300/F44336/ffffff?text=Consulting" alt="Consulting Services" class="service-image">
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Ready to Get Started?</h2>
+        <p>Let's discuss how our services can help your business grow</p>
+        <button onclick="window.location.href='contact.html'">Contact Us Today</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Our Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
